@@ -1,9 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://bk7x5r40bpn57"]
+[gd_scene load_steps=13 format=3 uid="uid://bk7x5r40bpn57"]
 
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="1_g1ini"]
 [ext_resource type="Texture2D" uid="uid://v3wnvs3asblq" path="res://Assets/characte_animationr1.png" id="2_45w3f"]
 [ext_resource type="Texture2D" uid="uid://c3hs2c0itqbk7" path="res://Assets/characte_animationr2.png" id="3_r47j0"]
 [ext_resource type="Texture2D" uid="uid://bc6oxpuik1pab" path="res://Assets/characte_animationr3.png" id="4_nnvty"]
+[ext_resource type="Texture2D" uid="uid://o77n7ebn0u23" path="res://Assets/Character_walking_facing_right1.png" id="5_hdfgm"]
+[ext_resource type="Texture2D" uid="uid://bigtwyg2oytoa" path="res://Assets/Character_walking_facing_left2.png" id="6_1q6t2"]
+[ext_resource type="Texture2D" uid="uid://c7py6t7rx8d3h" path="res://Assets/Character_walking_facing_right2.png" id="6_y2a8d"]
+[ext_resource type="Texture2D" uid="uid://d2r71vmpa3y3s" path="res://Assets/Character_walking_facing_right3.png" id="7_6qf4v"]
+[ext_resource type="Texture2D" uid="uid://brp6cttet5dxq" path="res://Assets/Character_walking_facing_left3.png" id="7_wgc2w"]
+[ext_resource type="Texture2D" uid="uid://gvxd6d2l086m" path="res://Assets/Character_walking_facing_left1.png" id="8_bngbs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvplh"]
 size = Vector2(128.572, 184.615)
@@ -22,6 +28,34 @@ animations = [{
 }],
 "loop": true,
 "name": &"front_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_hdfgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y2a8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6qf4v")
+}],
+"loop": true,
+"name": &"walking_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_bngbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1q6t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wgc2w")
+}],
+"loop": true,
+"name": &"walking_right",
 "speed": 5.0
 }]
 

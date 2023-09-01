@@ -9,7 +9,16 @@ func getInput():
 	velocity = dir * speed
 	if Input.is_action_just_pressed("down"):
 		animated_sprite_2d.play("front_idle")
-	
+	elif Input.is_action_just_released("down"):
+		animated_sprite_2d.stop()
+	elif Input.is_action_just_pressed("right"):
+		animated_sprite_2d.play("walking_right")
+	elif Input.is_action_just_released("right"):
+		animated_sprite_2d.stop()
+	elif Input.is_action_just_pressed("left"):
+		animated_sprite_2d.play("walking_left")
+	elif Input.is_action_just_released("left"):
+		animated_sprite_2d.stop()
 func _physics_process(delta):
 	getInput()
 	
