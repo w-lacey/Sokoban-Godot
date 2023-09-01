@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bk7x5r40bpn57"]
+[gd_scene load_steps=16 format=3 uid="uid://bk7x5r40bpn57"]
 
 [ext_resource type="Script" path="res://Scripts/Character.gd" id="1_g1ini"]
 [ext_resource type="Texture2D" uid="uid://v3wnvs3asblq" path="res://Assets/characte_animationr1.png" id="2_45w3f"]
@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://d2r71vmpa3y3s" path="res://Assets/Character_walking_facing_right3.png" id="7_6qf4v"]
 [ext_resource type="Texture2D" uid="uid://brp6cttet5dxq" path="res://Assets/Character_walking_facing_left3.png" id="7_wgc2w"]
 [ext_resource type="Texture2D" uid="uid://gvxd6d2l086m" path="res://Assets/Character_walking_facing_left1.png" id="8_bngbs"]
+[ext_resource type="Texture2D" uid="uid://bmc6g3ujogg72" path="res://Assets/character_walking_facing_back1.png" id="11_c2hqa"]
+[ext_resource type="Texture2D" uid="uid://x0v3apcg2tew" path="res://Assets/character_walking_facing_back2.png" id="12_bmwj0"]
+[ext_resource type="Texture2D" uid="uid://b2qmt1m3v141f" path="res://Assets/character_walking_facing_back3.png" id="13_2mc5n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvplh"]
 size = Vector2(128.572, 184.615)
@@ -28,23 +31,29 @@ animations = [{
 }],
 "loop": true,
 "name": &"front_idle",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_y2a8d")
+}, {
 "duration": 1.0,
 "texture": ExtResource("5_hdfgm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_y2a8d")
+"texture": ExtResource("5_hdfgm")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_6qf4v")
 }],
 "loop": true,
 "name": &"walking_left",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1q6t2")
+}, {
 "duration": 1.0,
 "texture": ExtResource("8_bngbs")
 }, {
@@ -56,7 +65,21 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_right",
-"speed": 5.0
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_c2hqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bmwj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2mc5n")
+}],
+"loop": true,
+"name": &"walking_up",
+"speed": 10.0
 }]
 
 [node name="Character" type="Node2D"]

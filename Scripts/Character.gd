@@ -11,6 +11,10 @@ func getInput():
 		animated_sprite_2d.play("front_idle")
 	elif Input.is_action_just_released("down"):
 		animated_sprite_2d.stop()
+	elif Input.is_action_just_pressed("up"):
+		animated_sprite_2d.play("walking_up")
+	elif Input.is_action_just_released("up"):
+		animated_sprite_2d.stop()
 	elif Input.is_action_just_pressed("right"):
 		animated_sprite_2d.play("walking_right")
 	elif Input.is_action_just_released("right"):
