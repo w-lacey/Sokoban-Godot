@@ -10,10 +10,10 @@
 scale = Vector2(-86828.9, -12.4637)
 polygon = PackedVector2Array(0, 0, -0.0132675, 0, -0.0132675, -51.9911, 0, -51.9911)
 
-[node name="Character" parent="." instance=ExtResource("1_8g3mc")]
-position = Vector2(944, 192)
-
 [node name="OuterWall" parent="." instance=ExtResource("2_yiejv")]
 
 [node name="Box" parent="." instance=ExtResource("3_j1mby")]
 position = Vector2(168, 304)
+
+[node name="Character" parent="." instance=ExtResource("1_8g3mc")]
+position = Vector2(944, 192)
