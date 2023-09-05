@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://btrcbg0ujjfx8"]
+
+[ext_resource type="Script" path="res://Scripts/Map.gd" id="1_us2e1"]
+[ext_resource type="PackedScene" uid="uid://b2tmla747wn63" path="res://Scenes/OuterWall.tscn" id="2_2smne"]
+[ext_resource type="PackedScene" uid="uid://bk7x5r40bpn57" path="res://Scenes/Character.tscn" id="3_5h28d"]
+[ext_resource type="PackedScene" uid="uid://dgm5f0hgu6rmh" path="res://Scenes/NormalWal.tscn" id="4_w6ttf"]
+[ext_resource type="PackedScene" uid="uid://dw45jhk8al4sd" path="res://Scenes/BoxDestination.tscn" id="5_ceuhb"]
+[ext_resource type="PackedScene" uid="uid://c2clw8rybkxvw" path="res://Scenes/Box.tscn" id="6_kxjue"]
+
+[node name="LevelOne" type="Node2D"]
+script = ExtResource("1_us2e1")
+
+[node name="OuterWall" parent="." instance=ExtResource("2_2smne")]
+
+[node name="Character" parent="." instance=ExtResource("3_5h28d")]
+position = Vector2(480, 128)
+
+[node name="NormalWall" parent="." instance=ExtResource("4_w6ttf")]
+position = Vector2(416, -56)
+
+[node name="BoxDestination" parent="." instance=ExtResource("5_ceuhb")]
+position = Vector2(16, 8)
+
+[node name="Box" parent="." instance=ExtResource("6_kxjue")]
+position = Vector2(168, 304)
+
+[node name="Box2" parent="." instance=ExtResource("6_kxjue")]
+position = Vector2(168, 48)

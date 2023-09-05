@@ -9,6 +9,10 @@ size = Vector2(128, 807.572)
 position = Vector2(72, -4)
 scale = Vector2(1, 1.01515)
 
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.231373, 0.231373, 0.231373, 1)
+polygon = PackedVector2Array(-72, 3.9403, 1080, 3.9403, 1080, 642.27, -72, 650.15)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(-64, 48)
 scale = Vector2(-0.100318, 0.801536)
@@ -18,8 +22,9 @@ position = Vector2(0, 339.786)
 shape = SubResource("RectangleShape2D_7lj1u")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(4.55203, 344.339)
-scale = Vector2(0.196529, 0.753184)
+position = Vector2(47.2015, 343.072)
+rotation = 1.5708
+scale = Vector2(12.6411, 35.6028)
 texture = ExtResource("1_in4up")
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
@@ -31,36 +36,37 @@ position = Vector2(0, 339.786)
 shape = SubResource("RectangleShape2D_7lj1u")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2"]
-position = Vector2(4.55203, 344.339)
-scale = Vector2(0.196529, 0.753184)
+position = Vector2(29.151, 343.793)
+rotation = 1.5708
+scale = Vector2(12.4377, 31.556)
 texture = ExtResource("1_in4up")
 
 [node name="CharacterBody2D3" type="CharacterBody2D" parent="."]
 position = Vector2(984, 11)
 rotation = 1.5708
 scale = Vector2(-0.100318, 1.40153)
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D3"]
 position = Vector2(0, 339.786)
 shape = SubResource("RectangleShape2D_7lj1u")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D3"]
-position = Vector2(4.55203, 344.339)
-scale = Vector2(0.196529, 0.753184)
+position = Vector2(-38.3204, 339.865)
+rotation = -1.5708
+scale = Vector2(12.6384, 34.056)
 texture = ExtResource("1_in4up")
 
 [node name="CharacterBody2D4" type="CharacterBody2D" parent="."]
 position = Vector2(984, 636)
 rotation = 1.5708
 scale = Vector2(-0.100318, 1.40153)
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D4"]
-position = Vector2(0, 339.786)
+position = Vector2(0.000488281, 339.786)
 shape = SubResource("RectangleShape2D_7lj1u")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D4"]
-position = Vector2(4.55203, 344.339)
-scale = Vector2(0.196529, 0.753184)
+position = Vector2(33.1344, 339.726)
+rotation = 1.5708
+scale = Vector2(-12.596, 32.9154)
 texture = ExtResource("1_in4up")

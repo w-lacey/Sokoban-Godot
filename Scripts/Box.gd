@@ -1,6 +1,9 @@
 extends RigidBody2D
 
+class_name Box
+
 @onready var box: RigidBody2D = $"."
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

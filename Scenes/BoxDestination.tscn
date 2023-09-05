@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw45jhk8al4sd"]
+
+[ext_resource type="Script" path="res://Scripts/BoxDestination.gd" id="1_7w8u2"]
+[ext_resource type="Texture2D" uid="uid://b34nwqb710r7i" path="res://Assets/destination.png" id="1_ppdra"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u12yp"]
+
+[node name="BoxDestination" type="Area2D"]
+script = ExtResource("1_7w8u2")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 32)
+shape = SubResource("CircleShape2D_u12yp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+scale = Vector2(0.662769, 0.628427)
+texture = ExtResource("1_ppdra")

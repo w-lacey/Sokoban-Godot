@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://c2clw8rybkxvw"]
 
-[ext_resource type="Script" path="res://Scenes/Box.gd" id="1_f8xkc"]
+[ext_resource type="Script" path="res://Scripts/Box.gd" id="1_2bipg"]
 [ext_resource type="Texture2D" uid="uid://y63nc35hmj4b" path="res://Assets/box.png" id="2_fgafd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mbbx8"]
-size = Vector2(16.0462, 12.21)
+size = Vector2(10.9917, 9.15751)
 
 [node name="Box" type="RigidBody2D"]
-position = Vector2(256, 160)
-scale = Vector2(1.64, 1.68)
+position = Vector2(48, 32)
+scale = Vector2(0.8, 0.84)
 gravity_scale = 0.0
 lock_rotation = true
 linear_damp = 6.0
@@ -16,14 +16,14 @@ angular_damp_mode = 1
 angular_damp = 10.0
 constant_force = Vector2(10, 0)
 constant_torque = 10.0
-script = ExtResource("1_f8xkc")
+script = ExtResource("1_2bipg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4.7619)
+position = Vector2(-26.5854, -9.52381)
 scale = Vector2(6.08, 6.24)
 shape = SubResource("RectangleShape2D_mbbx8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -0.707396)
-scale = Vector2(4.54695, 5.11633)
+position = Vector2(-25, -19.0476)
+scale = Vector2(2.89455, 3.2366)
 texture = ExtResource("2_fgafd")

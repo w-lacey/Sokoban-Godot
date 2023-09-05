@@ -86,7 +86,8 @@ animations = [{
 position = Vector2(224, 112)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-scale = Vector2(0.56, 0.52)
+position = Vector2(-196, -84)
+scale = Vector2(0.319999, 0.32)
 motion_mode = 1
 script = ExtResource("1_g1ini")
 metadata/_edit_group_ = true

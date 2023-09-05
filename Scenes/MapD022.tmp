@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://btrcbg0ujjfx8"]
+
+[ext_resource type="PackedScene" uid="uid://bk7x5r40bpn57" path="res://Scenes/Character.tscn" id="1_8g3mc"]
+[ext_resource type="Script" path="res://Scenes/Map.gd" id="1_lsl86"]
+[ext_resource type="PackedScene" uid="uid://dw45jhk8al4sd" path="res://Scenes/BoxDestination.tscn" id="1_wmaqd"]
+[ext_resource type="PackedScene" uid="uid://b2tmla747wn63" path="res://Scenes/OuterWall.tscn" id="2_yiejv"]
+[ext_resource type="PackedScene" uid="uid://c2clw8rybkxvw" path="res://Scenes/Box.tscn" id="3_j1mby"]
+[ext_resource type="PackedScene" uid="uid://dgm5f0hgu6rmh" path="res://Scenes/NormalWal.tscn" id="4_g5vag"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_lsl86")
+
+[node name="Floor" type="Polygon2D" parent="."]
+scale = Vector2(-86828.9, -12.4637)
+color = Color(0.160784, 0.129412, 0.129412, 1)
+polygon = PackedVector2Array(0, 0, -0.0132675, 0, -0.0132675, -51.9911, 0, -51.9911)
+
+[node name="OuterWall" parent="." instance=ExtResource("2_yiejv")]
+
+[node name="Character" parent="." instance=ExtResource("1_8g3mc")]
+position = Vector2(944, 192)
+
+[node name="NormalWall" parent="." instance=ExtResource("4_g5vag")]
+position = Vector2(416, -56)
+
+[node name="Area2D" parent="." instance=ExtResource("1_wmaqd")]
+position = Vector2(16, 8)
+
+[node name="Box" parent="." instance=ExtResource("3_j1mby")]
+position = Vector2(168, 304)
+
+[node name="Box2" parent="." instance=ExtResource("3_j1mby")]
