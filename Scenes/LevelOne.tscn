@@ -13,7 +13,7 @@ script = ExtResource("1_us2e1")
 [node name="OuterWall" parent="." instance=ExtResource("2_2smne")]
 
 [node name="Character" parent="." instance=ExtResource("3_5h28d")]
-position = Vector2(480, 128)
+position = Vector2(480, 160)
 
 [node name="NormalWall" parent="." instance=ExtResource("4_w6ttf")]
 position = Vector2(416, -56)

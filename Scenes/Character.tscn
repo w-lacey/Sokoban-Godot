@@ -83,7 +83,8 @@ animations = [{
 }]
 
 [node name="Character" type="Node2D"]
-position = Vector2(224, 112)
+position = Vector2(272, 128)
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(-196, -84)

@@ -8,6 +8,7 @@ size = Vector2(128, 807.572)
 [node name="OuterWall" type="Area2D"]
 position = Vector2(72, -4)
 scale = Vector2(1, 1.01515)
+metadata/_edit_group_ = true
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color(0.231373, 0.231373, 0.231373, 1)

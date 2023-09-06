@@ -6,6 +6,7 @@
 size = Vector2(16, 35.3116)
 
 [node name="NormalWall" type="CharacterBody2D"]
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, 318.7)
