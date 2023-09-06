@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://ds24i8o2ljogi"]
+[gd_scene load_steps=3 format=3 uid="uid://ds24i8o2ljogi"]
+
+[ext_resource type="Texture2D" uid="uid://o77n7ebn0u23" path="res://Assets/Character_walking_facing_right1.png" id="2_8o3ev"]
+[ext_resource type="FontFile" uid="uid://c8rx3kak61y4a" path="res://Assets/04B_30__.TTF" id="2_ajha8"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -7,15 +10,44 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0, 0.980392, 0.262745, 1)
+metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="CenterContainer"]
-layout_mode = 2
-text = "Level 1"
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -713.0
+offset_top = 152.0
+offset_right = -649.0
+offset_bottom = 216.0
+scale = Vector2(3.89237, 3.67507)
+texture = ExtResource("2_8o3ev")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -590.5
+offset_top = 277.0
+offset_right = -590.5
+offset_bottom = 277.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.388235, 0.603922, 0.996078, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("2_ajha8")
+theme_override_font_sizes/font_size = 90
+text = "SOKOBAN"
+horizontal_alignment = 1
+vertical_alignment = 1
