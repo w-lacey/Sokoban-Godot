@@ -9,6 +9,7 @@ size = Vector2(10.9917, 9.15751)
 [node name="Box" type="RigidBody2D"]
 position = Vector2(48, 32)
 scale = Vector2(0.8, 0.84)
+disable_mode = 1
 gravity_scale = 0.0
 lock_rotation = true
 linear_damp = 6.0
@@ -24,6 +25,6 @@ scale = Vector2(6.08, 6.24)
 shape = SubResource("RectangleShape2D_mbbx8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.90735e-06, -9.52381)
+position = Vector2(-25, -19.0476)
 scale = Vector2(2.89455, 3.2366)
 texture = ExtResource("2_fgafd")
